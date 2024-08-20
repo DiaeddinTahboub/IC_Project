@@ -1,0 +1,44 @@
+Circuit: *** SPICE deck for cell 16_bit_lay{lay} from library 16_bit_comparator
+
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Vin29: Removing PWL point (3e-008,5)
+Vin25: Removing PWL point (3e-008,5)
+Vin21: Removing PWL point (3e-008,5)
+Vin17: Removing PWL point (3e-008,5)
+Vin13: Removing PWL point (3e-008,5)
+Vin9: Removing PWL point (3e-008,5)
+Vin5: Removing PWL point (3e-008,5)
+Vin1: Removing PWL point (3e-008,5)
+Direct Newton iteration for .op point succeeded.
+
+tf_g=5.52182e-008 FROM 4.47818e-008 TO 1e-007
+tr_g=8.62362e-008 FROM 1.37638e-008 TO 1e-007
+tf_l=8.8762e-008 FROM 1.1238e-008 TO 1e-007
+tr_l=8.47563e-008 FROM 1.52437e-008 TO 1e-007
+
+Measurement "tf_e" FAIL'ed
+tr_e=5.45439e-008 FROM 4.54561e-008 TO 1e-007
+
+
+Date: Tue Aug 20 21:44:23 2024
+Total elapsed time: 3.622 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3537
+traniter = 3492
+tranpoints = 1444
+accept = 1300
+rejected = 144
+matrix size = 436
+fillins = 780
+solver = Normal
+Thread vector: 2179.8/209.9[12] 374.2/59.6[12] 91.8/27.6[12] 2.2/7.7[1]  2592/500
+Matrix Compiler1: 99.9 KB object code size  65.7/29.0/[14.2]
+Matrix Compiler2: 65.8 KB object code size  23.1/21.1/[6.6]
+
+

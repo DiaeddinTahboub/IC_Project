@@ -1,0 +1,194 @@
+*** SPICE deck for cell 16_bit.sch{sch} from library 16_bit_comparator
+*** Created on Sun Aug 18, 2024 18:01:06
+*** Last revised on Tue Aug 20, 2024 12:35:47
+*** Written on Tue Aug 20, 2024 12:35:52 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT _3Bit_AND__3Bit_AND FROM CELL 3Bit_AND:3Bit_AND{sch}
+.SUBCKT _3Bit_AND__3Bit_AND A B C OUT
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@4 net@50 A net@76 gnd NMOS L=0.6U W=9U
+Mnmos@5 net@76 B net@67 gnd NMOS L=0.6U W=9U
+Mnmos@7 gnd C net@67 gnd NMOS L=0.6U W=3U
+Mnmos@8 OUT net@50 gnd gnd NMOS L=0.6U W=3U
+Mpmos@3 vdd A net@50 vdd PMOS L=0.6U W=6U
+Mpmos@4 vdd B net@50 vdd PMOS L=0.6U W=6U
+Mpmos@5 net@50 C vdd vdd PMOS L=0.6U W=6U
+Mpmos@6 vdd net@50 OUT vdd PMOS L=0.6U W=6U
+.ENDS _3Bit_AND__3Bit_AND
+
+*** SUBCIRCUIT _4Bit_OR__4Bit_OR FROM CELL 4Bit_OR:4Bit_OR{sch}
+.SUBCKT _4Bit_OR__4Bit_OR A B C D OUT
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@4 A gnd gnd NMOS L=0.6U W=3U
+Mnmos@1 net@4 B gnd gnd NMOS L=0.6U W=3U
+Mnmos@2 gnd C net@4 gnd NMOS L=0.6U W=3U
+Mnmos@3 gnd D net@4 gnd NMOS L=0.6U W=3U
+Mnmos@4 OUT net@4 gnd gnd NMOS L=0.6U W=6U
+Mpmos@0 vdd A net@0 vdd PMOS L=0.6U W=6U
+Mpmos@1 net@0 B net@1 vdd PMOS L=0.6U W=6U
+Mpmos@2 net@46 C net@1 vdd PMOS L=0.6U W=6U
+Mpmos@3 net@4 D net@46 vdd PMOS L=0.6U W=6U
+Mpmos@4 vdd net@4 OUT vdd PMOS L=0.6U W=6U
+.ENDS _4Bit_OR__4Bit_OR
+
+*** SUBCIRCUIT _4bitAND__4bitAND_sch FROM CELL 4bitAND:4bitAND_sch{sch}
+.SUBCKT _4bitAND__4bitAND_sch A B C D OUT
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@34 D gnd gnd NMOS L=0.6U W=12U
+Mnmos@1 net@86 C net@34 gnd NMOS L=0.6U W=12U
+Mnmos@2 net@31 B net@86 gnd NMOS L=0.6U W=12U
+Mnmos@3 net@21 A net@31 gnd NMOS L=0.6U W=12U
+Mnmos@5 OUT net@21 gnd gnd NMOS L=0.6U W=3U
+Mpmos@1 vdd B net@21 vdd PMOS L=0.6U W=6U
+Mpmos@2 vdd C net@21 vdd PMOS L=0.6U W=6U
+Mpmos@3 vdd D net@21 vdd PMOS L=0.6U W=6U
+Mpmos@5 vdd A net@21 vdd PMOS L=0.6U W=6U
+Mpmos@6 vdd net@21 OUT vdd PMOS L=0.6U W=6U
+.ENDS _4bitAND__4bitAND_sch
+
+*** SUBCIRCUIT _2InputAND__TwoInAND FROM CELL 2InputAND:TwoInAND{sch}
+.SUBCKT _2InputAND__TwoInAND A B out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@4 A net@10 gnd NMOS L=0.6U W=6U
+Mnmos@1 net@10 B gnd gnd NMOS L=0.6U W=6U
+Mnmos@2 out net@4 gnd gnd NMOS L=0.6U W=3U
+Mpmos@0 vdd B net@4 vdd PMOS L=0.6U W=6U
+Mpmos@1 vdd A net@4 vdd PMOS L=0.6U W=6U
+Mpmos@2 vdd net@4 out vdd PMOS L=0.6U W=6U
+.ENDS _2InputAND__TwoInAND
+
+*** SUBCIRCUIT _2InputNOR__TwoInNOR FROM CELL 2InputNOR:TwoInNOR{sch}
+.SUBCKT _2InputNOR__TwoInNOR A B out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 out B gnd gnd NMOS L=0.6U W=3U
+Mnmos@1 out A gnd gnd NMOS L=0.6U W=3U
+Mpmos@0 net@9 B out vdd PMOS L=0.6U W=12U
+Mpmos@1 vdd A net@9 vdd PMOS L=0.6U W=12U
+.ENDS _2InputNOR__TwoInNOR
+
+*** SUBCIRCUIT inverter__inverter FROM CELL inverter:inverter{sch}
+.SUBCKT inverter__inverter IN OUT
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 OUT IN gnd gnd NMOS L=0.6U W=3U
+Mpmos@0 vdd IN OUT vdd PMOS L=0.6U W=6U
+.ENDS inverter__inverter
+
+*** SUBCIRCUIT _4-bit-comparator__4_bit_comp_sch FROM CELL 4-bit-comparator:4_bit_comp_sch{sch}
+.SUBCKT _4-bit-comparator__4_bit_comp_sch A0 A1 A2 A3 B0 B1 B2 B3 E G L
+** GLOBAL gnd
+** GLOBAL vdd
+X_3Bit_AND@2 net@73 net@103 net@122 net@193 _3Bit_AND__3Bit_AND
+X_3Bit_AND@3 net@73 net@103 net@124 net@196 _3Bit_AND__3Bit_AND
+X_4Bit_OR@0 net@65 net@173 net@193 net@214 L _4Bit_OR__4Bit_OR
+X_4Bit_OR@1 net@67 net@177 net@196 net@217 G _4Bit_OR__4Bit_OR
+X_4bitAND_@0 net@73 net@103 net@126 net@64 net@214 _4bitAND__4bitAND_sch
+X_4bitAND_@1 net@73 net@103 net@126 net@62 net@217 _4bitAND__4bitAND_sch
+X_4bitAND_@3 net@73 net@103 net@126 net@137 E _4bitAND__4bitAND_sch
+XTwoInAND@8 A3 net@46 net@67 _2InputAND__TwoInAND
+XTwoInAND@9 net@52 B3 net@65 _2InputAND__TwoInAND
+XTwoInAND@10 A2 net@26 net@99 _2InputAND__TwoInAND
+XTwoInAND@11 net@31 B2 net@102 _2InputAND__TwoInAND
+XTwoInAND@12 A1 net@14 net@124 _2InputAND__TwoInAND
+XTwoInAND@13 net@20 B1 net@122 _2InputAND__TwoInAND
+XTwoInAND@14 net@6 B0 net@64 _2InputAND__TwoInAND
+XTwoInAND@15 A0 net@2 net@62 _2InputAND__TwoInAND
+XTwoInAND@17 net@73 net@102 net@173 _2InputAND__TwoInAND
+XTwoInAND@18 net@73 net@99 net@177 _2InputAND__TwoInAND
+XTwoInNOR@3 net@122 net@124 net@126 _2InputNOR__TwoInNOR
+XTwoInNOR@4 net@65 net@67 net@73 _2InputNOR__TwoInNOR
+XTwoInNOR@5 net@102 net@99 net@103 _2InputNOR__TwoInNOR
+XTwoInNOR@6 net@64 net@62 net@137 _2InputNOR__TwoInNOR
+Xinverter@1 B3 net@46 inverter__inverter
+Xinverter@2 A2 net@31 inverter__inverter
+Xinverter@3 B0 net@2 inverter__inverter
+Xinverter@4 A0 net@6 inverter__inverter
+Xinverter@5 B2 net@26 inverter__inverter
+Xinverter@6 A1 net@20 inverter__inverter
+Xinverter@7 B1 net@14 inverter__inverter
+Xinverter@8 A3 net@52 inverter__inverter
+.ENDS _4-bit-comparator__4_bit_comp_sch
+
+*** SUBCIRCUIT _8-bit-comparator__8_bit_sch FROM CELL 8-bit-comparator:8_bit_sch{sch}
+.SUBCKT _8-bit-comparator__8_bit_sch A0 A1 A2 A3 A4 A5 A6 A7 B0 B1 B2 B3 B4 B5 B6 B7 E G L
+** GLOBAL gnd
+** GLOBAL vdd
+X_4_bit_co@5 A4 A5 A6 A7 B4 B5 B6 B7 net@136 net@137 net@157 _4-bit-comparator__4_bit_comp_sch
+X_4_bit_co@6 A0 A1 A2 A3 B0 B1 B2 B3 net@153 net@145 net@166 _4-bit-comparator__4_bit_comp_sch
+XTwoInAND@0 net@136 net@145 net@35 _2InputAND__TwoInAND
+XTwoInAND@1 net@136 net@166 net@8 _2InputAND__TwoInAND
+XTwoInAND@2 net@136 net@153 E _2InputAND__TwoInAND
+XTwoInNOR@0 net@137 net@35 net@37 _2InputNOR__TwoInNOR
+XTwoInNOR@1 net@157 net@8 net@4 _2InputNOR__TwoInNOR
+Xinverter@1 net@4 L inverter__inverter
+Xinverter@3 net@37 G inverter__inverter
+.ENDS _8-bit-comparator__8_bit_sch
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: 16_bit.sch{sch}
+X_8_bit_sc@0 A8 A9 A10 A11 A12 A13 A14 A15 B8 B9 B10 B11 B12 B13 B14 B15 net@5 net@34 net@167 _8-bit-comparator__8_bit_sch
+X_8_bit_sc@3 A0 A1 A2 A3 A4 A5 A6 A7 B0 B1 B2 B3 B4 B5 B6 B7 net@8 net@2 net@162 _8-bit-comparator__8_bit_sch
+XTwoInAND@0 net@5 net@2 net@25 _2InputAND__TwoInAND
+XTwoInAND@1 net@5 net@162 net@32 _2InputAND__TwoInAND
+XTwoInAND@2 net@5 net@8 E _2InputAND__TwoInAND
+XTwoInNOR@0 net@34 net@25 net@27 _2InputNOR__TwoInNOR
+XTwoInNOR@1 net@167 net@32 net@30 _2InputNOR__TwoInNOR
+Xinverter@0 net@30 L inverter__inverter
+Xinverter@1 net@27 G inverter__inverter
+
+* Spice Code nodes in cell cell '16_bit.sch{sch}'
+vdd vdd 0 DC 5
+vin1 A15 0 pwl 5n 0 15n 5 30n 5 60n 5 
+vin2 B15 0 pwl 5n 5 15n 0 30n 0 60n 5 
+vin3 A14 0 pwl 5n 0 15n 0 30n 5 60n 0 
+vin4 B14 0 pwl 5n 0 15n 5 30n 5 60n 0
+vin5 A13 0 pwl 5n 0 15n 5 30n 5 60n 5
+vin6 B13 0 pwl 5n 5 15n 0 30n 0 60n 5
+vin7 A12 0 pwl 5n 0 15n 0 30n 5 60n 0
+vin8 B12 0 pwl 5n 0 15n 5 30n 5 60n 0
+vin9 A11 0 pwl 5n 0 15n 5 30n 5 60n 5
+vin10 B11 0 pwl 5n 5 15n 0 30n 0 60n 5
+vin11 A10 0 pwl 5n 0 15n 0 30n 5 60n 0
+vin12 B10 0 pwl 5n 0 15n 5 30n 5 60n 0
+vin13 A9 0 pwl 5n 0 15n 5 30n 5 60n 5
+vin14 B9 0 pwl 5n 5 15n 0 30n 0 60n 5
+vin15 A8 0 pwl 5n 0 15n 0 30n 5 60n 0
+vin16 B8 0 pwl 5n 0 15n 5 30n 5 60n 0
+vin17 A7 0 pwl 5n 0 15n 5 30n 5 60n 5
+vin18 B7 0 pwl 5n 5 15n 0 30n 0 60n 5
+vin19 A6 0 pwl 5n 0 15n 0 30n 5 60n 0
+vin20 B6 0 pwl 5n 0 15n 5 30n 5 60n 0
+vin21 A5 0 pwl 5n 0 15n 5 30n 5 60n 5
+vin22 B5 0 pwl 5n 5 15n 0 30n 0 60n 5
+vin23 A4 0 pwl 5n 0 15n 0 30n 5 60n 0
+vin24 B4 0 pwl 5n 0 15n 5 30n 5 60n 0
+vin25 A3 0 pwl 5n 0 15n 5 30n 5 60n 5
+vin26 B3 0 pwl 5n 5 15n 0 30n 0 60n 5
+vin27 A2 0 pwl 5n 0 15n 0 30n 5 60n 0
+vin28 B2 0 pwl 5n 0 15n 5 30n 5 60n 0
+vin29 A1 0 pwl 5n 0 15n 5 30n 5 60n 5
+vin30 B1 0 pwl 5n 5 15n 0 30n 0 60n 5
+vin31 A0 0 pwl 5n 0 15n 0 30n 5 60n 0
+vin32 B0 0 pwl 5n 0 15n 5 30n 5 60n 0
+cload_L L 0 250fF
+cload_G G 0 250fF
+cload_E E 0 250fF
+.measure tran tf_G trig v(G) val=4.5 fall=1 td=8ns trag v(G) val=0.5 fall=1
+.measure tran tr_G trig v(G) val=0.5 rais=1 td=50ns trag v(G) val=4.5 rais=1
+.measure tran tf_L trig v(L) val=4.5 fall=1 td=8ns trag v(L) val=0.5 fall=1
+.measure tran tr_L trig v(L) val=0.5 rais=1 td=50ns trag v(L) val=4.5 rais=1
+.measure tran tf_E trig v(E) val=4.5 fall=1 td=8ns trag v(E) val=0.5 fall=1
+.measure tran tr_E trig v(E) val=0.5 rais=1 td=50ns trag v(E) val=4.5 rais=1
+.measure tran Pavg I(VDD)*V(VDD)
+.measure tran td trig V(a7)=4.75 rais=1 targ V(g)=4.75 fall=1
+.tran 0 0.1us
+.include "C:\Electric\C5_models.txt"
+.END

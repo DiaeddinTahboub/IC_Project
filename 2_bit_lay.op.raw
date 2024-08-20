@@ -1,0 +1,332 @@
+Title: *** SPICE deck for cell 2_bit_lay{lay} from library 2_bit_comparator
+Date: Tue Aug 20 21:01:28 2024
+Plotname: Operating Point
+Flags: real
+No. Variables: 319
+No. Points:            1
+Offset:   0.0000000000000000e+000
+Command: Linear Technology Corporation LTspice IV
+Variables:
+	0	V(net@971)	voltage
+	1	V(net@969)	voltage
+	2	V(net@975)	voltage
+	3	V(net@1048)	voltage
+	4	V(net@928)	voltage
+	5	V(net@1089)	voltage
+	6	V(net@1018)	voltage
+	7	V(net@1136)	voltage
+	8	V(net@947)	voltage
+	9	V(net@919)	voltage
+	10	V(net@921)	voltage
+	11	V(l)	voltage
+	12	V(net@930)	voltage
+	13	V(net@929)	voltage
+	14	V(g)	voltage
+	15	V(e)	voltage
+	16	V(net@1203)	voltage
+	17	V(net@1212)	voltage
+	18	V(b1)	voltage
+	19	V(net@1257)	voltage
+	20	V(a1)	voltage
+	21	V(net@1387)	voltage
+	22	V(net@1213)	voltage
+	23	V(net@1198)	voltage
+	24	V(net@1412)	voltage
+	25	V(net@1421)	voltage
+	26	V(b0)	voltage
+	27	V(net@1466)	voltage
+	28	V(a0)	voltage
+	29	V(net@1596)	voltage
+	30	V(net@1422)	voltage
+	31	V(net@1407)	voltage
+	32	V(net@1432)	voltage
+	33	V(vdd)	voltage
+	34	V(net@1172)	voltage
+	35	V(net@935)	voltage
+	36	V(net@1001)	voltage
+	37	V(net@1238)	voltage
+	38	V(net@1447)	voltage
+	39	Id(Mpmos@68)	device_current
+	40	Ig(Mpmos@68)	device_current
+	41	Ib(Mpmos@68)	device_current
+	42	Is(Mpmos@68)	device_current
+	43	Id(Mpmos@67)	device_current
+	44	Ig(Mpmos@67)	device_current
+	45	Ib(Mpmos@67)	device_current
+	46	Is(Mpmos@67)	device_current
+	47	Id(Mpmos@66)	device_current
+	48	Ig(Mpmos@66)	device_current
+	49	Ib(Mpmos@66)	device_current
+	50	Is(Mpmos@66)	device_current
+	51	Id(Mpmos@65)	device_current
+	52	Ig(Mpmos@65)	device_current
+	53	Ib(Mpmos@65)	device_current
+	54	Is(Mpmos@65)	device_current
+	55	Id(Mpmos@64)	device_current
+	56	Ig(Mpmos@64)	device_current
+	57	Ib(Mpmos@64)	device_current
+	58	Is(Mpmos@64)	device_current
+	59	Id(Mpmos@63)	device_current
+	60	Ig(Mpmos@63)	device_current
+	61	Ib(Mpmos@63)	device_current
+	62	Is(Mpmos@63)	device_current
+	63	Id(Mpmos@62)	device_current
+	64	Ig(Mpmos@62)	device_current
+	65	Ib(Mpmos@62)	device_current
+	66	Is(Mpmos@62)	device_current
+	67	Id(Mpmos@61)	device_current
+	68	Ig(Mpmos@61)	device_current
+	69	Ib(Mpmos@61)	device_current
+	70	Is(Mpmos@61)	device_current
+	71	Id(Mpmos@60)	device_current
+	72	Ig(Mpmos@60)	device_current
+	73	Ib(Mpmos@60)	device_current
+	74	Is(Mpmos@60)	device_current
+	75	Id(Mpmos@59)	device_current
+	76	Ig(Mpmos@59)	device_current
+	77	Ib(Mpmos@59)	device_current
+	78	Is(Mpmos@59)	device_current
+	79	Id(Mpmos@58)	device_current
+	80	Ig(Mpmos@58)	device_current
+	81	Ib(Mpmos@58)	device_current
+	82	Is(Mpmos@58)	device_current
+	83	Id(Mpmos@57)	device_current
+	84	Ig(Mpmos@57)	device_current
+	85	Ib(Mpmos@57)	device_current
+	86	Is(Mpmos@57)	device_current
+	87	Id(Mpmos@56)	device_current
+	88	Ig(Mpmos@56)	device_current
+	89	Ib(Mpmos@56)	device_current
+	90	Is(Mpmos@56)	device_current
+	91	Id(Mpmos@55)	device_current
+	92	Ig(Mpmos@55)	device_current
+	93	Ib(Mpmos@55)	device_current
+	94	Is(Mpmos@55)	device_current
+	95	Id(Mpmos@54)	device_current
+	96	Ig(Mpmos@54)	device_current
+	97	Ib(Mpmos@54)	device_current
+	98	Is(Mpmos@54)	device_current
+	99	Id(Mpmos@53)	device_current
+	100	Ig(Mpmos@53)	device_current
+	101	Ib(Mpmos@53)	device_current
+	102	Is(Mpmos@53)	device_current
+	103	Id(Mpmos@52)	device_current
+	104	Ig(Mpmos@52)	device_current
+	105	Ib(Mpmos@52)	device_current
+	106	Is(Mpmos@52)	device_current
+	107	Id(Mpmos@51)	device_current
+	108	Ig(Mpmos@51)	device_current
+	109	Ib(Mpmos@51)	device_current
+	110	Is(Mpmos@51)	device_current
+	111	Id(Mpmos@50)	device_current
+	112	Ig(Mpmos@50)	device_current
+	113	Ib(Mpmos@50)	device_current
+	114	Is(Mpmos@50)	device_current
+	115	Id(Mpmos@49)	device_current
+	116	Ig(Mpmos@49)	device_current
+	117	Ib(Mpmos@49)	device_current
+	118	Is(Mpmos@49)	device_current
+	119	Id(Mpmos@48)	device_current
+	120	Ig(Mpmos@48)	device_current
+	121	Ib(Mpmos@48)	device_current
+	122	Is(Mpmos@48)	device_current
+	123	Id(Mpmos@47)	device_current
+	124	Ig(Mpmos@47)	device_current
+	125	Ib(Mpmos@47)	device_current
+	126	Is(Mpmos@47)	device_current
+	127	Id(Mpmos@46)	device_current
+	128	Ig(Mpmos@46)	device_current
+	129	Ib(Mpmos@46)	device_current
+	130	Is(Mpmos@46)	device_current
+	131	Id(Mpmos@45)	device_current
+	132	Ig(Mpmos@45)	device_current
+	133	Ib(Mpmos@45)	device_current
+	134	Is(Mpmos@45)	device_current
+	135	Id(Mpmos@44)	device_current
+	136	Ig(Mpmos@44)	device_current
+	137	Ib(Mpmos@44)	device_current
+	138	Is(Mpmos@44)	device_current
+	139	Id(Mpmos@43)	device_current
+	140	Ig(Mpmos@43)	device_current
+	141	Ib(Mpmos@43)	device_current
+	142	Is(Mpmos@43)	device_current
+	143	Id(Mpmos@42)	device_current
+	144	Ig(Mpmos@42)	device_current
+	145	Ib(Mpmos@42)	device_current
+	146	Is(Mpmos@42)	device_current
+	147	Id(Mpmos@41)	device_current
+	148	Ig(Mpmos@41)	device_current
+	149	Ib(Mpmos@41)	device_current
+	150	Is(Mpmos@41)	device_current
+	151	Id(Mpmos@40)	device_current
+	152	Ig(Mpmos@40)	device_current
+	153	Ib(Mpmos@40)	device_current
+	154	Is(Mpmos@40)	device_current
+	155	Id(Mpmos@39)	device_current
+	156	Ig(Mpmos@39)	device_current
+	157	Ib(Mpmos@39)	device_current
+	158	Is(Mpmos@39)	device_current
+	159	Id(Mpmos@38)	device_current
+	160	Ig(Mpmos@38)	device_current
+	161	Ib(Mpmos@38)	device_current
+	162	Is(Mpmos@38)	device_current
+	163	Id(Mpmos@37)	device_current
+	164	Ig(Mpmos@37)	device_current
+	165	Ib(Mpmos@37)	device_current
+	166	Is(Mpmos@37)	device_current
+	167	Id(Mpmos@36)	device_current
+	168	Ig(Mpmos@36)	device_current
+	169	Ib(Mpmos@36)	device_current
+	170	Is(Mpmos@36)	device_current
+	171	Id(Mpmos@35)	device_current
+	172	Ig(Mpmos@35)	device_current
+	173	Ib(Mpmos@35)	device_current
+	174	Is(Mpmos@35)	device_current
+	175	Id(Mnmos@68)	device_current
+	176	Ig(Mnmos@68)	device_current
+	177	Ib(Mnmos@68)	device_current
+	178	Is(Mnmos@68)	device_current
+	179	Id(Mnmos@67)	device_current
+	180	Ig(Mnmos@67)	device_current
+	181	Ib(Mnmos@67)	device_current
+	182	Is(Mnmos@67)	device_current
+	183	Id(Mnmos@66)	device_current
+	184	Ig(Mnmos@66)	device_current
+	185	Ib(Mnmos@66)	device_current
+	186	Is(Mnmos@66)	device_current
+	187	Id(Mnmos@65)	device_current
+	188	Ig(Mnmos@65)	device_current
+	189	Ib(Mnmos@65)	device_current
+	190	Is(Mnmos@65)	device_current
+	191	Id(Mnmos@64)	device_current
+	192	Ig(Mnmos@64)	device_current
+	193	Ib(Mnmos@64)	device_current
+	194	Is(Mnmos@64)	device_current
+	195	Id(Mnmos@63)	device_current
+	196	Ig(Mnmos@63)	device_current
+	197	Ib(Mnmos@63)	device_current
+	198	Is(Mnmos@63)	device_current
+	199	Id(Mnmos@62)	device_current
+	200	Ig(Mnmos@62)	device_current
+	201	Ib(Mnmos@62)	device_current
+	202	Is(Mnmos@62)	device_current
+	203	Id(Mnmos@61)	device_current
+	204	Ig(Mnmos@61)	device_current
+	205	Ib(Mnmos@61)	device_current
+	206	Is(Mnmos@61)	device_current
+	207	Id(Mnmos@60)	device_current
+	208	Ig(Mnmos@60)	device_current
+	209	Ib(Mnmos@60)	device_current
+	210	Is(Mnmos@60)	device_current
+	211	Id(Mnmos@59)	device_current
+	212	Ig(Mnmos@59)	device_current
+	213	Ib(Mnmos@59)	device_current
+	214	Is(Mnmos@59)	device_current
+	215	Id(Mnmos@58)	device_current
+	216	Ig(Mnmos@58)	device_current
+	217	Ib(Mnmos@58)	device_current
+	218	Is(Mnmos@58)	device_current
+	219	Id(Mnmos@57)	device_current
+	220	Ig(Mnmos@57)	device_current
+	221	Ib(Mnmos@57)	device_current
+	222	Is(Mnmos@57)	device_current
+	223	Id(Mnmos@56)	device_current
+	224	Ig(Mnmos@56)	device_current
+	225	Ib(Mnmos@56)	device_current
+	226	Is(Mnmos@56)	device_current
+	227	Id(Mnmos@55)	device_current
+	228	Ig(Mnmos@55)	device_current
+	229	Ib(Mnmos@55)	device_current
+	230	Is(Mnmos@55)	device_current
+	231	Id(Mnmos@54)	device_current
+	232	Ig(Mnmos@54)	device_current
+	233	Ib(Mnmos@54)	device_current
+	234	Is(Mnmos@54)	device_current
+	235	Id(Mnmos@53)	device_current
+	236	Ig(Mnmos@53)	device_current
+	237	Ib(Mnmos@53)	device_current
+	238	Is(Mnmos@53)	device_current
+	239	Id(Mnmos@52)	device_current
+	240	Ig(Mnmos@52)	device_current
+	241	Ib(Mnmos@52)	device_current
+	242	Is(Mnmos@52)	device_current
+	243	Id(Mnmos@51)	device_current
+	244	Ig(Mnmos@51)	device_current
+	245	Ib(Mnmos@51)	device_current
+	246	Is(Mnmos@51)	device_current
+	247	Id(Mnmos@50)	device_current
+	248	Ig(Mnmos@50)	device_current
+	249	Ib(Mnmos@50)	device_current
+	250	Is(Mnmos@50)	device_current
+	251	Id(Mnmos@49)	device_current
+	252	Ig(Mnmos@49)	device_current
+	253	Ib(Mnmos@49)	device_current
+	254	Is(Mnmos@49)	device_current
+	255	Id(Mnmos@48)	device_current
+	256	Ig(Mnmos@48)	device_current
+	257	Ib(Mnmos@48)	device_current
+	258	Is(Mnmos@48)	device_current
+	259	Id(Mnmos@47)	device_current
+	260	Ig(Mnmos@47)	device_current
+	261	Ib(Mnmos@47)	device_current
+	262	Is(Mnmos@47)	device_current
+	263	Id(Mnmos@46)	device_current
+	264	Ig(Mnmos@46)	device_current
+	265	Ib(Mnmos@46)	device_current
+	266	Is(Mnmos@46)	device_current
+	267	Id(Mnmos@45)	device_current
+	268	Ig(Mnmos@45)	device_current
+	269	Ib(Mnmos@45)	device_current
+	270	Is(Mnmos@45)	device_current
+	271	Id(Mnmos@44)	device_current
+	272	Ig(Mnmos@44)	device_current
+	273	Ib(Mnmos@44)	device_current
+	274	Is(Mnmos@44)	device_current
+	275	Id(Mnmos@43)	device_current
+	276	Ig(Mnmos@43)	device_current
+	277	Ib(Mnmos@43)	device_current
+	278	Is(Mnmos@43)	device_current
+	279	Id(Mnmos@42)	device_current
+	280	Ig(Mnmos@42)	device_current
+	281	Ib(Mnmos@42)	device_current
+	282	Is(Mnmos@42)	device_current
+	283	Id(Mnmos@41)	device_current
+	284	Ig(Mnmos@41)	device_current
+	285	Ib(Mnmos@41)	device_current
+	286	Is(Mnmos@41)	device_current
+	287	Id(Mnmos@40)	device_current
+	288	Ig(Mnmos@40)	device_current
+	289	Ib(Mnmos@40)	device_current
+	290	Is(Mnmos@40)	device_current
+	291	Id(Mnmos@39)	device_current
+	292	Ig(Mnmos@39)	device_current
+	293	Ib(Mnmos@39)	device_current
+	294	Is(Mnmos@39)	device_current
+	295	Id(Mnmos@38)	device_current
+	296	Ig(Mnmos@38)	device_current
+	297	Ib(Mnmos@38)	device_current
+	298	Is(Mnmos@38)	device_current
+	299	Id(Mnmos@37)	device_current
+	300	Ig(Mnmos@37)	device_current
+	301	Ib(Mnmos@37)	device_current
+	302	Is(Mnmos@37)	device_current
+	303	Id(Mnmos@36)	device_current
+	304	Ig(Mnmos@36)	device_current
+	305	Ib(Mnmos@36)	device_current
+	306	Is(Mnmos@36)	device_current
+	307	Id(Mnmos@35)	device_current
+	308	Ig(Mnmos@35)	device_current
+	309	Ib(Mnmos@35)	device_current
+	310	Is(Mnmos@35)	device_current
+	311	I(Cload_e)	device_current
+	312	I(Cload_g)	device_current
+	313	I(Cload_l)	device_current
+	314	I(Vin4)	device_current
+	315	I(Vin3)	device_current
+	316	I(Vin2)	device_current
+	317	I(Vin1)	device_current
+	318	I(Vdd)	device_current
+Binary:
+°ƒŒÿÿÿ@Ý[.L’…2   @’Î1Sƒ<’Î1   @’Î1$Î1   @   @’Î1   @’Î1L’…2   @‘³·1   @‘³72    Tƒ<f
+Î1   @   @‘³·1   @‘³72    Tƒ<f
+Î1   @L’…2   @   @   @âW‚?âW‚?âW‚?·&Œ,   €,-‡ d­ø&   €ÿ!Œ,·&Œ¬¸(È$   €ò¯,Üò¯¬w°,   €STw°¬ð¹¡%   €tö¯,ûø¯¬óC1¬   €7ä…óC1,òC1,   €7ä…òC1¬Ù°,   €u­Ù°¬ù¯¬   €	÷¯,ï¹¡%ó¹¡%   €	÷¯,ù¯¬·&Œ,   €,-‡ d­ø&   €ÿ!Œ,·&Œ¬¸(È$   €ò¯,Üò¯¬w°,   €STw°¬ð¹¡%   €tö¯,ûø¯¬óC1¬   €7ä…óC1,òC1,   €7ä…òC1¬Ù°,   €u­Ù°¬ù¯¬   €	÷¯,ï¹¡%ó¹¡%   €	÷¯,ù¯¬·&Œ,   €,-‡ d­ø&   €ÿ!Œ,·&Œ¬ò¹¡%   €tö¯,ûø¯¬»0-   €ƒH¿»0­¼0-   €Æyý¼0­×°,   €t­×°¬DéG&   €Xø¯,˜þ¯¬VH&   €æ@VH¦ð¹¡%   €tö¯,ûø¯¬ïC1¬   €5ä…îC1,ðC1,   €5ä…ðC1¬ñ¹¡%   €tö¯,ûø¯¬ÿQ²¬   €/°ÿQ²,,ãc   €/°(éžo9    õ¥šž©Þ¤›ˆ d­    õ¥šžˆ d-Üò¯¬    ÕtèÜò¯,"k§    ò¯¬w°,ûø¯¬    Ô¾ìûø¯,^º¨    •‰°¬óC±,ÒFŸ§    kŒ’¨^º('k§    tö¯¬×°,ù/­    ¦gžù/-ù/­    áƒÎù/-o9    õ¥šž©Þ¤›ˆ d­    õ¥šžˆ d-Üò¯¬    ÕtèÜò¯,"k§    ò¯¬w°,ûø¯¬    Ô¾ìûø¯,^º¨    •‰°¬óC±,ÒFŸ§    kŒ’¨^º('k§    tö¯¬×°,ù/­    ¦gžù/-ù/­    áƒÎù/-o9    õ¥šž©Þ¤›ˆ d­    õ¥šžˆ d-ûø¯¬    Ô¾ìûø¯,»°,    Xø¯¬%k§%k§    Xø¯¬»°,%k§    tö¯¬×°,—þ¯,    bî—þ¯¬×bþš    bîî–òûø¯¬    Ô¾ìûø¯, ^º¨    •‰°¬óC±,ÖFŸ§    kŒ’¨ ^º(ûø¯¬    Ô¾ìûø¯,‹½–©    	÷¯¬ÿQ²,¬½–©    ×æ0š¬½–)^z¡	'ùšmÁ                rx)¯

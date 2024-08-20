@@ -1,0 +1,24 @@
+*** SPICE deck for cell TwoInOR{lay} from library 2InputOR
+*** Created on Sat May 11, 2024 22:06:57
+*** Last revised on Sun Aug 18, 2024 22:22:54
+*** Written on Sun Aug 18, 2024 22:23:02 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: TwoInOR{lay}
+Mnmos@0 gnd A net@0 gnd NMOS L=1.2U W=6U AS=54.84P AD=59.04P PS=51.6U PD=53.6U
+Mnmos@1 net@0 B gnd gnd NMOS L=1.2U W=6U AS=59.04P AD=54.84P PS=53.6U PD=51.6U
+Mnmos@2 gnd net@0 out gnd NMOS L=1.2U W=6U AS=46.44P AD=59.04P PS=45.6U PD=53.6U
+Mpmos@0 vdd A net@16 vdd PMOS L=1.2U W=24U AS=44.82P AD=121.14P PS=51.6U PD=105.6U
+Mpmos@1 net@16 B net@0 vdd PMOS L=1.2U W=24U AS=54.84P AD=44.82P PS=51.6U PD=51.6U
+Mpmos@2 vdd net@0 out vdd PMOS L=1.2U W=12U AS=46.44P AD=121.14P PS=45.6U PD=105.6U
+
+* Spice Code nodes in cell cell 'TwoInOR{lay}'
+vdd vdd 0 DC 5
+va A 0 pwl 10n 0 20n 5 40n 5 50n 0 70n 0 80n 5 100n 5 110n 0 130n 0 140n 5 160n 5 170n 0 190n 0 200n 5
+cload out 0 250fF
+.measure tran tf trig v(out) val=4.5 fall=1 td=4ns trag v(out) val=0.5 fall=1
+.measure tran tr trig v(out) val=0.5 rais=1 td=4ns trag v(out) val=4.5 rais=1
+.tran 0 250ns
+.include "C:\Electric\C5_models.txt"
+.END

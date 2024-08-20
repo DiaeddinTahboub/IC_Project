@@ -1,0 +1,16 @@
+Electric Version 9.07
+--------------- 0 --------------
+  Tue Aug 20 21:54:06 EEST 2024
+Menu Activated: File | Open Library...
+--------------- 1 --------------
+  Tue Aug 20 21:54:12 EEST 2024
+ProcessKeyBinding 401 when=1724180052081 modifiers=80 code=11 char=ffff false false
+--------------- 2 --------------
+  Tue Aug 20 21:54:12 EEST 2024
+Menu Activated: File | Save All Libraries
+--------------- 3 --------------
+  Tue Aug 20 21:54:12 EEST 2024
+ProcessKeyBinding 400 when=1724180052291 modifiers=80 code=0 char=13 false false
+--------------- 4 --------------
+  Tue Aug 20 21:54:12 EEST 2024
+ProcessKeyBinding 402 when=1724180052476 modifiers=0 code=11 char=ffff false false

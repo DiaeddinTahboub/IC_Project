@@ -1,0 +1,32 @@
+Circuit: *** SPICE deck for cell TwoInOR{lay} from library 2InputOR
+
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+WARNING: Node B is floating.
+
+Direct Newton iteration for .op point succeeded.
+
+tf=2.04133e-007 FROM 4.58671e-008 TO 2.5e-007
+tr=2.33375e-007 FROM 1.66248e-008 TO 2.5e-007
+
+
+Date: Sun Aug 18 22:23:03 2024
+Total elapsed time: 0.130 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2830
+traniter = 2818
+tranpoints = 1264
+accept = 1175
+rejected = 89
+matrix size = 8
+fillins = 0
+solver = Normal
+Matrix Compiler1: 434 bytes object code size  0.2/0.1/[0.0]
+Matrix Compiler2: 724 bytes object code size  0.1/0.1/[0.1]
+
+

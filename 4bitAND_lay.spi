@@ -1,0 +1,31 @@
+*** SPICE deck for cell 4bitAND_lay{lay} from library 4bitAND
+*** Created on Sun Aug 18, 2024 01:12:59
+*** Last revised on Sun Aug 18, 2024 14:24:35
+*** Written on Sun Aug 18, 2024 14:24:41 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: 4bitAND_lay{lay}
+Mnmos@0 net@32 D net@1 gnd NMOS L=1.2U W=24U AS=64.8P AD=44.82P PS=37.8U PD=51.6U
+Mnmos@1 net@33 C net@32 gnd NMOS L=1.2U W=24U AS=44.82P AD=44.82P PS=51.6U PD=51.6U
+Mnmos@2 net@24 B net@33 gnd NMOS L=1.2U W=24U AS=44.82P AD=44.82P PS=51.6U PD=51.6U
+Mnmos@3 gnd A net@24 gnd NMOS L=1.2U W=24U AS=44.82P AD=135.9P PS=51.6U PD=87.6U
+Mnmos@4 gnd nmos@4_poly-left OUT gnd NMOS L=1.2U W=6U AS=40.5P AD=135.9P PS=26.7U PD=87.6U
+Mpmos@3 vdd A net@1 vdd PMOS L=1.2U W=12U AS=64.8P AD=115.92P PS=37.8U PD=70.56U
+Mpmos@4 vdd B net@1 vdd PMOS L=1.2U W=12U AS=64.8P AD=115.92P PS=37.8U PD=70.56U
+Mpmos@5 vdd C net@1 vdd PMOS L=1.2U W=12U AS=64.8P AD=115.92P PS=37.8U PD=70.56U
+Mpmos@6 vdd D net@1 vdd PMOS L=1.2U W=12U AS=64.8P AD=115.92P PS=37.8U PD=70.56U
+Mpmos@7 vdd net@1 OUT vdd PMOS L=1.2U W=12U AS=40.5P AD=115.92P PS=26.7U PD=70.56U
+
+* Spice Code nodes in cell cell '4bitAND_lay{lay}'
+vdd vdd 0 DC 5
+va A 0 pwl 10n 0 20n 5 40n 5 50n 0 70n 0 80n 5 100n 5 110n 0 130n 0 140n 5 160n 5 170n 0 190n 0 200n 5
+vb B 0 pwl 10n 0 40n 0 50n 5 100n 5 110n 0 160n 0 170n 5 200n 5
+vc C 0 pwl 10n 0 100n 0 110n 5 
+vd D 0 pwl 10n 0 200n 0 210n 5 
+cload out 0 400fF
+.measure tran tf trig v(out) val=4.5 fall=1 td=4ns trag v(out) val=0.5 fall=1
+.measure tran tr trig v(out) val=0.5 rais=1 td=4ns trag v(out) val=4.5 rais=1
+.tran 0 250ns
+.include C:\Electric\C5_models.txt
+.END

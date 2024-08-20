@@ -1,0 +1,45 @@
+*** SPICE deck for cell 1_bit_lay{lay} from library 1_bit_comparator
+*** Created on Sun Aug 18, 2024 22:54:46
+*** Last revised on Tue Aug 20, 2024 19:53:09
+*** Written on Tue Aug 20, 2024 19:53:14 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: 1_bit_lay{lay}
+Mnmos@1 gnd net@14 net@12 gnd NMOS L=0.6U W=6U AS=5.805P AD=29.351P PS=13.8U PD=47.7U
+Mnmos@2 net@12 B net@26 gnd NMOS L=0.6U W=6U AS=12.255P AD=5.805P PS=23.9U PD=13.8U
+Mnmos@3 gnd net@26 L gnd NMOS L=0.6U W=3U AS=11.61P AD=29.351P PS=22.8U PD=47.7U
+Mnmos@4 gnd A net@80 gnd NMOS L=0.6U W=6U AS=5.805P AD=29.351P PS=13.8U PD=47.7U
+Mnmos@5 net@80 net@68 net@71 gnd NMOS L=0.6U W=6U AS=12.255P AD=5.805P PS=23.9U PD=13.8U
+Mnmos@6 gnd net@71 G gnd NMOS L=0.6U W=3U AS=11.61P AD=29.351P PS=22.8U PD=47.7U
+Mnmos@7 gnd A net@14 gnd NMOS L=0.6U W=3U AS=6.75P AD=29.351P PS=10.5U PD=47.7U
+Mnmos@8 gnd B net@68 gnd NMOS L=0.6U W=3U AS=6.75P AD=29.351P PS=10.5U PD=47.7U
+Mnmos@9 gnd L E gnd NMOS L=0.6U W=3U AS=13.71P AD=29.351P PS=25.8U PD=47.7U
+Mnmos@10 E G gnd gnd NMOS L=0.6U W=3U AS=29.351P AD=13.71P PS=47.7U PD=25.8U
+Mpmos@1 vdd net@14 net@26 vdd PMOS L=0.6U W=6U AS=12.255P AD=32.91P PS=23.9U PD=52.4U
+Mpmos@2 net@26 B vdd vdd PMOS L=0.6U W=6U AS=32.91P AD=12.255P PS=52.4U PD=23.9U
+Mpmos@3 vdd net@26 L vdd PMOS L=0.6U W=6U AS=11.61P AD=32.91P PS=22.8U PD=52.4U
+Mpmos@4 vdd A net@71 vdd PMOS L=0.6U W=6U AS=12.255P AD=32.91P PS=23.9U PD=52.4U
+Mpmos@5 net@71 net@68 vdd vdd PMOS L=0.6U W=6U AS=32.91P AD=12.255P PS=52.4U PD=23.9U
+Mpmos@6 vdd net@71 G vdd PMOS L=0.6U W=6U AS=11.61P AD=32.91P PS=22.8U PD=52.4U
+Mpmos@7 vdd A net@14 vdd PMOS L=0.6U W=3U AS=6.75P AD=32.91P PS=10.5U PD=52.4U
+Mpmos@8 vdd B net@68 vdd PMOS L=0.6U W=3U AS=6.75P AD=32.91P PS=10.5U PD=52.4U
+Mpmos@9 vdd L net@148 vdd PMOS L=0.6U W=12U AS=11.205P AD=32.91P PS=25.8U PD=52.4U
+Mpmos@10 net@148 G E vdd PMOS L=0.6U W=12U AS=13.71P AD=11.205P PS=25.8U PD=25.8U
+
+* Spice Code nodes in cell cell '1_bit_lay{lay}'
+vdd vdd 0 DC 5 
+vin1 A 0 pwl 5n 0 15n 5 30n 5 60n 5
+vin2 B 0 pwl 5n 5 15n 0 30n 0 60n 5
+cload_L L 0 250fF
+cload_G G 0 250fF
+cload_E E 0 250fF
+.measure tran tf_G trig v(G) val=4.5 fall=1 td=8ns trag v(G) val=0.5 fall=1
+.measure tran tr_G trig v(G) val=0.5 rais=1 td=50ns trag v(G) val=4.5 rais=1
+.measure tran tf_L trig v(L) val=4.5 fall=1 td=8ns trag v(L) val=0.5 fall=1
+.measure tran tr_L trig v(L) val=0.5 rais=1 td=50ns trag v(L) val=4.5 rais=1
+.measure tran tf_E trig v(E) val=4.5 fall=1 td=8ns trag v(E) val=0.5 fall=1
+.measure tran tr_E trig v(E) val=0.5 rais=1 td=50ns trag v(E) val=4.5 rais=1
+.tran 0 0.1us
+.include "C:\Electric\C5_models.txt"
+.END

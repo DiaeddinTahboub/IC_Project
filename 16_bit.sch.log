@@ -1,0 +1,78 @@
+Circuit: *** SPICE deck for cell 16_bit.sch{sch} from library 16_bit_comparator
+
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Vin29: Removing PWL point (3e-008,5)
+Vin25: Removing PWL point (3e-008,5)
+Vin21: Removing PWL point (3e-008,5)
+Vin17: Removing PWL point (3e-008,5)
+Vin13: Removing PWL point (3e-008,5)
+Vin9: Removing PWL point (3e-008,5)
+Vin5: Removing PWL point (3e-008,5)
+Vin1: Removing PWL point (3e-008,5)
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-005
+Gmin = 1.6455e-006
+Gmin = 1.76685e-007
+Gmin = 1.89714e-008
+Gmin = 2.03704e-009
+Gmin = 2.18725e-010
+Gmin = 2.34854e-011
+Gmin = 2.52173e-012
+Gmin = 2.70769e-013
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+tf_g=5.33494e-008 FROM 4.66506e-008 TO 1e-007
+tr_g=8.85329e-008 FROM 1.14671e-008 TO 1e-007
+tf_l=8.87552e-008 FROM 1.12448e-008 TO 1e-007
+tr_l=8.76545e-008 FROM 1.23455e-008 TO 1e-007
+
+Measurement "tf_e" FAIL'ed
+tr_e=5.32535e-008 FROM 4.67465e-008 TO 1e-007
+pavg=1e-007 FROM 0 TO 1e-007
+td=3.20909e-008 FROM 1.45e-008 TO 4.65909e-008
+
+
+Date: Tue Aug 20 12:35:57 2024
+Total elapsed time: 3.938 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 4814
+traniter = 4419
+tranpoints = 1636
+accept = 1428
+rejected = 208
+matrix size = 427
+fillins = 1088
+solver = Normal
+Thread vector: 703.4/197.7[12] 489.3/67.3[12] 145.0/37.2[12] 3.5/11.5[1]  2592/500
+Matrix Compiler1: 145 KB object code size  118.1/59.5/[24.6]
+Matrix Compiler2: 71.5 KB object code size  43.4/35.3/[8.4]
+
+

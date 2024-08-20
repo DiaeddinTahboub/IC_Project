@@ -1,0 +1,51 @@
+Circuit: *** SPICE deck for cell 4_bit_comp_sch{sch} from library 4-bit-comparator
+
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Vin8: Removing PWL point (1.5e-008,0)
+Vin7: Removing PWL point (1.5e-008,0)
+Vin2: Removing PWL point (3e-008,5)
+Vin1: Removing PWL point (3e-008,5)
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Direct Newton iteration for .op point succeeded.
+
+tf_g=5.40902e-008 FROM 4.59098e-008 TO 1e-007
+tr_g=8.99169e-008 FROM 1.00831e-008 TO 1e-007
+tf_l=7.64576e-008 FROM 2.35424e-008 TO 1e-007
+tr_l=9.03482e-008 FROM 9.65175e-009 TO 1e-007
+tf_e=9.00492e-008 FROM 9.95078e-009 TO 1e-007
+tr_e=7.67583e-008 FROM 2.32417e-008 TO 1e-007
+
+
+Date: Tue Aug 20 05:15:17 2024
+Total elapsed time: 0.842 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 4801
+traniter = 4770
+tranpoints = 1727
+accept = 1469
+rejected = 258
+matrix size = 97
+fillins = 166
+solver = Normal
+Thread vector: 501.5/47.2[12] 81.4/19.9[12] 27.7/7.6[12] 0.8/3.8[1]  2592/500
+Matrix Compiler1: 25.0 KB object code size  13.8/7.5/[3.7]
+Matrix Compiler2: 14.6 KB object code size  4.5/4.8/[1.2]
+
+
